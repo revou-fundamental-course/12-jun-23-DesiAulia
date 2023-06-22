@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Website Konversi Suhu</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Konversi Suhu</h1>
+    <form id="temperature-form">
+      <div class="form-group">
+        <label for="temperature">Masukkan Suhu:</label>
+        <input type="number" id="temperature" name="temperature" placeholder="Masukkan suhu dalam Celcius" required>
+      </div>
+      <div class="form-group">
+        <label for="unit">Konversi ke:</label>
+        <select id="unit" name="unit">
+          <option value="fahrenheit">Fahrenheit</option>
+          <option value="kelvin">Kelvin</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <input type="submit" value="Konversi">
+      </div>
+    </form>
+
+    <div id="result">
+      <h2>Hasil Konversi</h2>
+      <p id="converted-temperature"></p>
+      <p id="explanation"></p>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
